@@ -4,6 +4,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600&family=Poppins:wght@200;300;400;600;800&family=Roboto&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">   
+
+
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+
     <!-- Argon CSS -->
    <link type="text/css" href="css/argon-design-system.min.css" rel="stylesheet">
 
@@ -16,12 +27,66 @@
   </head>
   <body>
 <!-- ----------------------------- HEADER ---------------------------------->
-    <header class="header">
+    <header class="header" id="header">
+      <nav class="nav container navbar-expand-lg">
+        <a href="#" class="nav__logo navbar-brand ml-3">Luxin Zhang</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">
+                <i class="uil uil-home nav__icon"></i>Home
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                <i class="uil uil-user-circle nav__icon"></i>About
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">
+                <i class="uil uil-file-info-alt nav__icon"></i>Skills
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#qualification" class="nav__link">
+                <i class="uil uil-book-open nav__icon"></i>Qualification
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#portfolio" class="nav__link">
+                <i class="uil uil-bag nav__icon"></i>Portfolio
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                <i class="uil uil-fast-mail nav__icon"></i>Contact Me
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav__btns">
+          <!-- THEME CHANGING BUTTONS -->
+          <i  data-mode ="dark" class="uil uil-moon moon-changetheme" id="theme-button"></i>
+
+          <div class="=nav__toggle" id="nav-toggle">
+            <i class="uil uil-apps"></i>
+          </div>
+        </div>
+      </nav>
       
     </header>
 <!-- ========================= MAIN ========================= -->
   <main class="main">
-    
+
     <!-- ----------------------------- HOME ---------------------------------->  
       <section class="home section" id="home">
 
@@ -33,11 +98,18 @@
           
       </section>
 
-    <!-- ----------------------------- QUALIFICATIONS (SKILLS AND EXPERIENCE) ---------------------------------->
-      <section class="qualification section" id="qualification">
+    <!-- ----------------------------- SKILLS ---------------------------------->
+      <section class="skills section" id="skills">
         
 
       </section>
+      
+    <!-- ----------------------------- QUALIFICATIONS (SKILLS AND EXPERIENCE) ---------------------------------->
+      <section class="qualification section" id="qualification">
+          
+
+      </section>
+  
     
     <!-- ----------------------------- PORTFOLIO ---------------------------------->
       <section class="portfolio section" id="portfolio">

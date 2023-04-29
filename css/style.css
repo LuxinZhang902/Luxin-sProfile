@@ -86,3 +86,128 @@
 
     }
 }
+
+
+
+/* ========== VARIABLE COLOR DARK THEME ========== */
+body.dark-theme{
+    /* HSL Color Mode */
+    --first-color: hsl(--hue-color, 70%, 58%); /* Not changed */
+    --first-color-second: hsl(var(--hue-color), 30%, 8%);
+    --first-color-alt: hsl(var(--hue-color), 50%, 50%);
+    --first-color-lighter: hsl(var(--hue-color), 90%, 80%);
+
+
+    --title-color: hsl(var(--hue-color), 10%, 95%);
+    --text-color: hsl(var(--hue-color), 10%, 75%);
+    --mainText: hsl(var(--hue-color), 10%, 70%);
+    --text-color-light: hsl(var(--hue-color), 10%, 65%);
+    --input-color: hsl(var(--hue-color), 30%, 15%);
+    --body-color: hsl(var(--hue-color), 30%, 13%); 
+    --container-color: hsl(var(--hue-color), 30%, 16%); 
+    --scroll-bar-color: hsl(var(--hue-color), 10%, 50%);
+    --scroll-thumb-color: hsl(var(--hue-color), 15%, 32%);
+}
+
+/* ==========  NAV BUTTONS DARK/LIGHT THEME ============*/
+.nav__btns{
+    display: flex;
+    align-items: center;
+    padding-left: var(--mb-0-5);
+    margin: 0;
+    margin-top: -5px;
+}
+
+.change-theme{
+    font-size: 1.25rem;
+    color: var(--title-color);
+    margin-right: var(--mb-1);
+    cursor: pointer;  
+}
+
+.change-theme:hover{
+    color: var(--first-color);
+
+}
+
+/* ============ BASE ============ */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin:0 0 var(--header-height) 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+}
+
+h1, h2, h3, h4{
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+/* =============================== REUSABLE CSS CLASSES ========================== */
+.section{
+    padding: 2rem 0 4rem;
+    margin: auto;   
+    min-height: 80vh;
+}
+
+.section__title{
+    font-size: var(--big-font-size);
+    font-family: var(--gullible-font);
+}
+
+.section__subtitle{
+    display: block;
+    font-size: var(--small-font-size);
+    margin-bottom: var(--mb-3);
+}
+
+.section__title, 
+.section__subtitle{
+    text-align: center;
+}
+
+/* ============================= LAYOUT ================================ */
+.container{
+    margin-right: var(--mb-1);
+}
+
+.grid{
+    display: grid;
+}
+
+.header{
+    width: 100%;  /*occupy the whole screen*/
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: var(--z-fixed);
+    background-color: var(--body-color);
+}
