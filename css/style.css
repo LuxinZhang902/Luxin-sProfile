@@ -205,18 +205,20 @@ img{
     right: 0;
     z-index: var(--z-fixed);
     background-color: var(--body-color);
+    margin-right: var(--mb-0-25);
 }
 
 
 
 /* ===================== NAV STYLING ===================== */
 .nav{
-    /* max-wid: 968px; */
+    max-width: 968px;
     height: var(--header-height);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 0;
+    margin-left: var(--mb-0-5);
+    margin-right: var(--mb-0-25);
 }
 
 .nav__logo, 
@@ -291,7 +293,7 @@ img{
 }
 
 .nav__close:hover{
-    color: var(--first-color);
+    color: var(--first-color-alt);
 }
 
 /* SHOW MENU */

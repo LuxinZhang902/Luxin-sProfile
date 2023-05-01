@@ -1,6 +1,6 @@
-//===================== GARK HEME ========================
+//===================== DARK HEME ========================
 const themeButton = document.getElementById('theme-button')
-const darkTheme = 'dart-theme'
+const darkTheme = 'dark-theme'
 const iconTheme = 'uil-sun'
 
 //PREVIOUSLY SELECTED TOPIC(checking from local storage)
@@ -27,3 +27,39 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
 console.log("THEME SETTINIG IS WORKING!")
+
+//===================== MENU SHOW Y HIDDEN ========================
+const navMenu = document.getElementById("nav-menu")
+const navToggle = document.getElementById("nav-toggle")
+const navClose = document.getElementById("nav-close")
+
+//===================== MENU SHOW =================================
+/* Validate if the constant exists */
+if(navToggle){
+    navToggle.addEventListener('click', () => {
+        navMenu.classList.add('show-menu')
+    })
+}
+
+//===================== MENU HIDE =================================
+/* Validate if the constant exists */
+if(navClose){
+    navClose.addEventListener('click', () => {
+        navMenu.classList.remove('show-menu')
+    })
+}
+
+
+
+console.log("MENU Y SETTING IS WORKING!")
+//===================== REMOVE MENU PROFILE =================================
+const navLink = document.querySelectorAll('.nav__link')
+
+function linkAction(){
+    const navMenu = document.getElementById('nav-menu')
+    //When we click on nav__link, we remove the show menu class
+    navMenu.classList.remove('show-menu')
+}
+
+navLink.forEach(n => n.addEventListener('click', linkAction))
+console.log("REMOVE MENU PROFILE IS WORKING!")
