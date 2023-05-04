@@ -9,3 +9,14 @@ Main
 
 
 footer
+
+
+
+
+
+ABOUT
+left -> image
+
+right -> text
+
+below image -> EXPERIENCE
