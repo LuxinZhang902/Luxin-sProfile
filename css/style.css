@@ -226,7 +226,7 @@ img{
 
 /* ============================= LAYOUT ================================ */
 .container{
-    margin-right: var(--mb-1);
+    /* margin-right: var(--mb-1); */
 }
 
 .grid{
@@ -359,7 +359,7 @@ img{
     display: flex;
     gap: 1.75rem;
     padding-left: 0;
-    margin-left: var(--mb-1);
+    /* margin-left: var(--mb-1); */
     justify-content: space-around;
     align-items: center;
 }
