@@ -20,3 +20,8 @@ left -> image
 right -> text
 
 below image -> EXPERIENCE
+
+
+SKILLS
+card ---> software kills
+card -> Designs
