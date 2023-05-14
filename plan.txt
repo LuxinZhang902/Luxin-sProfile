@@ -25,3 +25,11 @@ below image -> EXPERIENCE
 SKILLS
 card ---> software kills
 card -> Designs
+
+EDUCATION EXPERIENCE
+
+line - date
+card - title
+        Institute
+        Dstails - unfolded
+
