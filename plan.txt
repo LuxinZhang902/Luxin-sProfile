@@ -33,3 +33,16 @@ card - title
         Institute
         Dstails - unfolded
 
+
+PORTFOLIO
+---------
+<  >
+
+CONTACT 
+-------
+
+left     right
+address  form -> name, subject, email, message
+email
+cell 
+

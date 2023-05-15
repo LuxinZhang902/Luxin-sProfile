@@ -18,6 +18,10 @@
     <!-- Argon CSS -->
    <link type="text/css" href="css/argon-design-system.min.css" rel="stylesheet">
 
+   <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+
+
    <!-- Personal Styling -->
    <link rel="stylesheet" href="css/style.css">
    
@@ -682,14 +686,159 @@
     
     <!-- ----------------------------- PORTFOLIO ---------------------------------->
       <section class="portfolio section" id="portfolio">
-          
+          <h2 class="section__title"> Portfolio </h2>
+          <span class="section__subtitle"> My most recent works </span>
+
+          <div class="blog-slider">
+            <div class="blog-slider__wrp swiper-wrapper">
+
+              <!-- For Portfolio item 1 -->
+              <div class="blog-slider__item swiper-slide">
+                <div class="blog-slider__img">
+                  <img src="" alt="Portfolio item">
+                </div>
+
+                <div class="blog-slider__content">
+                  <span class="blog-slider__code"> 14th May 2023</span>
+                  <div class="blog-slider__title"> </div>
+                  <div class="blog-slider__text">  </div>
+                  <a href="#portfolio" target="_blank" class="button blog-slider__button button--flex">
+                    Demo
+                    <i class="uil uil-play button__icon"></i>
+                  </a>
+                </div>
+              </div>
+
+
+              <!-- For Portfolio item 2 -->
+              <div class="blog-slider__item swiper-slide">
+                <div class="blog-slider__img">
+                  <img src="" alt="Portfolio item">
+                </div>
+
+                <div class="blog-slider__content">
+                  <span class="blog-slider__code"> 14th May 2023</span>
+                  <div class="blog-slider__title"> </div>
+                  <div class="blog-slider__text">  </div>
+                  <a href="#portfolio" target="_blank" class="button blog-slider__button button--flex">
+                    Demo
+                    <i class="uil uil-play button__icon"></i>
+                  </a>
+                </div>
+              </div>
+
+
+              <!-- For Portfolio item 3 -->
+              <div class="blog-slider__item swiper-slide">
+                <div class="blog-slider__img">
+                  <img src="" alt="Portfolio item">
+                </div>
+
+                <div class="blog-slider__content">
+                  <span class="blog-slider__code"> 14th May 2023</span>
+                  <div class="blog-slider__title"> </div>
+                  <div class="blog-slider__text">  </div>
+                  <a href="#portfolio" target="_blank" class="button blog-slider__button button--flex">
+                    Demo
+                    <i class="uil uil-play button__icon"></i>
+                  </a>
+                </div>
+              </div>
+
+
+              <!-- For Portfolio item 4 -->
+              <div class="blog-slider__item swiper-slide">
+                <div class="blog-slider__img">
+                  <img src="" alt="Portfolio item">
+                </div>
+
+                <div class="blog-slider__content">
+                  <span class="blog-slider__code"> 14th May 2023</span>
+                  <div class="blog-slider__title"> </div>
+                  <div class="blog-slider__text">  </div>
+                  <a href="#portfolio" target="_blank" class="button blog-slider__button button--flex">
+                    Demo
+                    <i class="uil uil-play button__icon"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="bolg-slider__pagination"></div>
+
+            </div>
+          </div>
 
       </section>
 
 
     <!-- ----------------------------- CONTANT US ---------------------------------->
       <section class="contact section" id="contact">
+        <h2 class="section__title"> Contact Me </h2>
+        <span class="section__subtitle"> Get in Touch</span>
 
+        <div class="row mt-lg-6 justify-content center contact_mail">
+          <!-- contact information -->
+          <div class="col-lg-6 mx-lg-0 mx-2 contact__container container">
+            <div class="contact__information">
+              <i class="uil uil-phone contact__icon"></i>
+              <div>
+                <h3 class="contact__title"> Call Me </h3>
+                <span class="contact__subtitle">+1(631)538-8940</span>
+              </div>
+            </div>
+
+            <div class="contact__information">
+              <i class="uil uil-envelope contact__icon"></i>
+              <div>
+                <h3 class="contact__title"> Email </h3>
+                <span class="contact__subtitle">philomela.zhang@gmail.com</span>
+              </div>
+            </div>
+            
+            <div class="contact__information">
+              <i class="uil uil-instagram contact__icon"></i>
+              <div>
+                <h3 class="contact__title"> myInstagram </h3>
+                <span class="contact__subtitle"> luxin.zhang.92 </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form -->
+          <div class="col-lg-6 pl-lg-4 mt-lg0 mt-6 contact-form" id="message-me">
+            <h2 class="contact__title"> Want to have a cup of coffee?  - <span> Let's talk! </span></h2>
+            <form action="#" method="POST" class="cf">
+              <div class="row">
+                <div class="col-lg-6">
+                  <input type="text" name="mesage-name" class="form-control mb-30 cf" placeholder="Your Name">
+                </div>
+
+                <div class="col-lg-6">
+                  <input type="email" name="mesage-email" class="form-control mb-30 cf" placeholder="Your Email">
+                </div>
+
+                <div class="col-12">
+                  <input type="text" name="mesage-subject" class="form-control mb-30 cf" placeholder="Subject">
+                </div>
+
+                <div class="col-12">
+                  <textarea name="message" class="form-control mb-30 cf" cols="30" rows="10" placeholder="Your Messgae"></textarea>
+                  <input type="text" name="mesage-name" class="form-control mb-30 cf" placeholder="Your Name">
+                </div>
+
+                <div class="col-12">
+                  <div>
+                    <button type="submit" class="button button--flex send-messgae form_button">
+                      Send Message
+                      <i class="uil uil-message button__icon"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+
+        </div>
       </section>
 
   </main>
@@ -713,6 +862,9 @@
 
   <!-- Typewriter CSS Effect -->
   <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
   <!-- Self Script -->
   <script src="js/script.js"></script>
