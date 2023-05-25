@@ -66,6 +66,12 @@
     --z-tooltip: 10;
     --z-fixed: 100;
     --z-modal: 1000;
+
+    /* ========== Background ========== */
+    --background-body-color: #FFF;
+    --border-color: rgba(255, 255, 255, 0.425);
+    --border-style: none;
+    --footer-color: var(--first-color);
 }   
 
 /* FONT SIZE FOR LARGER DEVICES */
@@ -79,7 +85,6 @@
         --normal-font-size: 1rem;
         --small-font-size: 0.875rem;
         --smaller-font-size: 0.813rem;
-
     }
 }
 
@@ -103,6 +108,11 @@ body.dark-theme{
     --container-color: hsl(var(--hue-color), 30%, 16%); 
     --scroll-bar-color: hsl(var(--hue-color), 10%, 50%);
     --scroll-thumb-color: hsl(var(--hue-color), 15%, 32%);
+
+    --background-body-color: rgba(255, 255, 255, 0.068);
+    --border-color: none;
+    --border-style: solid;
+    --footer-color: hsl(250, 53%, 18%);
 }
 
 /* ==========  NAV BUTTONS DARK/LIGHT THEME ============*/
@@ -181,6 +191,7 @@ img{
     display: block;
     font-size: var(--small-font-size);
     margin-bottom: var(--mb-3);
+    color: var(--text-color);
 }
 
 .section__title, 
@@ -401,7 +412,7 @@ img{
     align-content: center;
     justify-content: center;
     text-align: center;
-    transform: translateX(-20px);
+    transform: translateX(-50px);
 }
 
 .home__welcome{
@@ -526,6 +537,7 @@ img{
 .about__description{
     text-align: center;
     margin-bottom: var(--mb-2-5);
+    color: var(--text-color);
 }
 
 .about__info{
@@ -543,6 +555,7 @@ img{
 .about__info-name{
     font-size: var(--small-font-size);
     font-family: var(--roboto-font);
+    color: var(--text-color-light);
 }
 
 .about__info-name,
@@ -555,8 +568,6 @@ img{
     display: flex;
     justify-content: center;
 }
-
-
 
 /* ============================= SKILLSET ================================ */
 /* .skills__container{
@@ -662,7 +673,8 @@ skills__container-card:hover{
 .card_skill .contentBx h2{
     position: relative;
     font-weight: var(--font-medium);
-    color: var(--text-color);
+    /* color: var(--text-color); */
+    color: #FFF;
     margin: 0;
     padding: 0;
 }
@@ -740,6 +752,12 @@ skills__container-card:hover{
     display: inline-block;
     font-size: var(--small-font-size);
     margin-bottom: var(--mb-1);
+    color: var(--text-color);
+}
+
+.transparent_card{
+  background-color: var(--background-body-color);
+  border-color: var(--border-color);
 }
 
 .mirror-face{
@@ -810,6 +828,7 @@ skills__container-card:hover{
 
 .qualification__start-icon{
     font-size: var(--h3-font-size);
+    color: var(--mainText);
 }
 
 
@@ -827,7 +846,11 @@ skills__container-card:hover{
 	border-radius: 25px;
 	height: 400px;
 	transition: all 0.3s;
-  }
+  background-color: var(--background-body-color);
+  border-style: var(--border-color);
+  border-color: var(--border-color);
+ }
+
   @media screen and (max-width: 992px) {
 	.blog-slider {
 	  max-width: 680px;
@@ -975,7 +998,7 @@ skills__container-card:hover{
 	transition: all 0.4s;
   }
   .blog-slider__code {
-	color: #7b7992;
+	color: var(--text-color-light);
 	margin-bottom: 15px;
 	display: block;
 	font-weight: 500;
@@ -983,11 +1006,11 @@ skills__container-card:hover{
   .blog-slider__title {
 	font-size: 24px;
 	font-weight: 700;
-	color: #0d0925;
+	color: var(--title-color);
 	margin-bottom: 20px;
   }
   .blog-slider__text {
-	color: #4e4a67;
+	color: var(--text-color);
 	margin-bottom: 30px;
 	line-height: 1.5em;
   }
@@ -1138,14 +1161,14 @@ form input, form textarea{
 }
 
 form input:focus, form textarea:focus {
-  -moz-box-shadow: 0 0px 2px #e74c3c !important;
-  -webkit-box-shadow: 0 1px 1px #e74c3c !important;
-  box-shadow: 0 1px 1px #e74c3c !important;
+  -moz-box-shadow: 0 0px 2px var(--first-color-lighter) !important;
+  -webkit-box-shadow: 0 1px 1px var(--first-color-lighter) !important;
+  box-shadow: 0 1px 1px var(--first-color-lighter) !important;
 }
 
 form #input-submit{
-  color: white;
-  background: #e74c3c;
+  color: var(--background-body-color);
+  background: var(--first-color-alt);
   cursor: pointer;
 }
 
@@ -1157,6 +1180,16 @@ form #input-submit:hover{
 
 form textarea{
   height: 130px;
+}
+
+.form__color{
+  background-color: var(--background-body-color);
+}
+
+.cf{
+  background-color: var(--background-body-color);
+  border-style: var(--border-style);
+  border-color: var(--border-color);
 }
 
 .cf:before,
@@ -1201,7 +1234,8 @@ form textarea{
 
 /* ============================= FOOTER SECTION ================================ */
 .footer{
-  padding-top: var(--mb-2);
+  /* padding-top: var(--mb-2); */
+  padding: 0;
 }
 
 .footer__container{
@@ -1209,7 +1243,8 @@ form textarea{
 }
 
 .footer__bg{
-  background-color: #7796f2;
+  /* background-color: #7796f2; */
+  background-color: var(--footer-color);
   padding: 2rem 0 3rem;
 }     
 
@@ -1529,7 +1564,7 @@ form textarea{
   }
 
   .home__social{
-    transform: translateX(-4rem);
+    transform: translateX(2rem);
   }
 
   .contact__form{
