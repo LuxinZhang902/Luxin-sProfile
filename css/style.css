@@ -1364,6 +1364,13 @@ form textarea{
     margin-top: var(--mb-0-25);
   }
 
+  .home__data{
+    transform: translateX(0.3rem);
+  }
+
+  .home__scroll-mouse{
+    margin-top: var(--mb-0-25);
+  }
   .about{
     margin-top: 6rem;
   }
