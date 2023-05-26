@@ -367,6 +367,10 @@ img{
     margin-bottom: var(--mb-2);
 }
 
+.section{
+  background-image: url("path/to/image.jpg");
+}
+
 .home__container{
     display: flex;
     gap: 1.75rem;
