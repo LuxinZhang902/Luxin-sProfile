@@ -233,6 +233,14 @@ img{
 .button--white:hover{
     background-color: var(--first-color-lighter);
 }
+.contact-button{
+  display: inline-block;
+  background-color: rgb(145, 187, 246);
+  color: white;
+  padding: 1rem;
+  border-radius: .5rem;
+  font-weight: var(--font-medium);
+}
 
 
 /* ============================= LAYOUT ================================ */
@@ -362,9 +370,9 @@ img{
 .home{
     height: 70vh;
     align-content: space-between;   
-    margin-top: var(--mb-3);
+    /* margin-top: var(--mb-3); */
     padding-bottom: 0;
-    margin-bottom: var(--mb-2);
+    /* margin-bottom: var(--mb-2); */
 }
 
 .section{
@@ -372,8 +380,11 @@ img{
 }
 
 .home__container{
+    background-image: url('/assets/img/sea_3.jpeg');
+    background-size: cover; /* or contain, etc. */
+    background-repeat: no-repeat;
     display: flex;
-    gap: 1.75rem;
+    /* gap: 1.75rem; */
     padding-left: 0;
     /* margin-left: var(--mb-1); */
     justify-content: space-around;
@@ -381,14 +392,14 @@ img{
 }
 
 .home__content{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr; */
     grid-template-areas: 'home__social home__content';
-    padding-top: var(--mb-2-5);
+    /* padding-top: var(--mb-2-5); */
     align-items: center;
     height: auto;
     align-content: space-between;
-    margin-right: var(--mb-0-25);
+    /* margin-right: var(--mb-0-25); */
     margin-left: 0;
 }
 
@@ -404,7 +415,7 @@ img{
 
 .home__social-icon{
     font-size: 1.25rem;
-    color: var(--first-color);
+    color: white;
 }
 .home__social-icon.hover{
     columns: var(--first-color-alt);
@@ -412,7 +423,7 @@ img{
 
 .home__data{
     grid-area: home__content;
-    width: 600px;
+    width: 1150px;
     align-content: center;
     justify-content: center;
     text-align: center;
@@ -429,7 +440,7 @@ img{
 .home__title{
     text-align: center;
     font-size: var(--big-font-size);
-    color: var(--text-color);
+    color: white;
     margin-top: var(--mb-1-5);
     padding-bottom: 1rem;
 }
@@ -457,7 +468,7 @@ img{
 .home__subtitle{
     text-align: center;
     font-size: var(--h3-font-size);
-    color: var(--text-color);
+    color: white;
     font-weight: var(--font-medium);
     margin-top: var(--mb-1);
     margin-bottom: var(--mb-1);
